@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="FRcalculatorContainer">
+    <div id="FRinputArea">
+      <span id="FRloanAmountLabel">Amount you wish to borrow</span>
+      <input type="text" id="FRloanAmountInput" placeholder="£1,000 - £500,000" />
+      <div id="FRinfo">
+        <i class="FRicon">i</i>
+        <span>*Amount must be between £1,000 and £500,000</span>
+      </div>
+      <label for="FRmonthsSlider" id="FRmonthsLabel"><strong>For how many months?</strong></label>
+      <input type="range" id="FRmonthsSlider" min="6" max="72" value="6" step="6" />
+      <div id="FRmonthsDisplay">6 months</div>
+      <div id="FRcreditScoreSection">
+        <button id="FRpoorCredit">Poor</button>
+        <button id="FRaverageCredit">Average</button>
+        <button id="FRgreatCredit">Great</button>
+      </div>
+    </div>
+    <div id="FRoutputArea">
+      <div id="FRmonthlyRepayment">
+        <span>Monthly repayment</span>
+        <div id="FRmonthlyAmount">£0.00</div>
+      </div>
+      <div id="FRdetails">
+        <div id="FRloanAmountOutput">Loan amount: £0.00</div>
+        <div id="FRcompletionFee">Completion Fee: £0.00</div>
+        <div id="FRinterestOutput">Interest: £0.00</div>
+        <div id="FRtotalRepayable"><strong>Total amount repayable: £0.00</strong></div>
+      </div>
+      <button id="FRcheckEligibility">Check your eligibility</button>
+      <a href="#" id="FRapplyNow">Apply Now</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
